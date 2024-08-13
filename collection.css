@@ -14,8 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: space 5px;
 }
 
 .header a {
@@ -23,6 +23,7 @@ body {
   text-decoration: none;
   margin: 0 30px;
   font-size: 20px;
+  margin-left: 50px;
 }
 
 .header a:hover {
@@ -34,17 +35,35 @@ body {
   padding: 5px;
 }
 
+.shopping img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+.shopping img:hover {
+  transform: scale(1.2);
+  box-shadow: initial;
+}
+.shopping a:hover {
+  background-color: initial;
+  box-shadow: initial;
+  transform: initial;
+  color: initial;
+  border-radius: initial;
+  padding: initial;
+}
 .product {
-  display: inline-block;
+  flex-basis: 25%;
   margin: 20px;
   width: 200px;
   text-align: center;
-  flex-basis: 20%;
+  flex-basis: 18%;
 }
 
 .product img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -66,12 +85,26 @@ body {
 
 .search-container {
   display: flex;
-  align-items: center;
+  margin-left: 40px;
 }
-
+.search-container img {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  filter: invert(100);
+}
+.search-container img:hover {
+  background-color: initial;
+  box-shadow: initial;
+  transform: initial;
+  color: initial;
+  border-radius: initial;
+  padding: initial;
+}
 .search-container input[type="text"] {
   width: 100px;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 20px;
   margin-right: 15px;
   background-color: rgb(255, 255, 255);
@@ -80,8 +113,8 @@ body {
 .search-container span {
   font-size: 20px;
   color: rgb(255, 255, 255);
-  margin-right: 10px;
 }
+
 img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
@@ -96,12 +129,12 @@ img:hover {
 
 @media (max-width: 768px) {
   .product {
-    flex-basis: 40%;
+    flex-basis: 30%;
   }
 }
 
 @media (max-width: 480px) {
   .product {
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
 }
