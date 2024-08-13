@@ -8,32 +8,36 @@ body {
 }
 
 .header {
-  background-color: rgb(8, 20, 133);
-  width: 100%;
+  background-color: darkblue;
+  color: #fff;
+  padding: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 50px;
-  justify-content: space-around;
-  margin: space 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
-  margin: 0 30px;
-  font-size: 20px;
-  margin-left: 50px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .header a:hover {
-  background-color: rgb(40, 49, 127);
+  background-color: rgb(156, 49, 6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: scale(1);
   color: #ffffff;
   border-radius: 5px;
   padding: 5px;
 }
+
+.header .search-container {
+  display: flex;
+  align-items: center;
+}
+
 
 .shopping img {
   width: 30px;
