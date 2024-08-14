@@ -28,7 +28,7 @@ require "mailerconfig.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <br><br>
@@ -51,7 +51,8 @@ require "mailerconfig.php";
         <div class="sub-cont">
             <div class="img">
                 <div class="img__text m--up">
-                    <h3>Don't have an account? Please Sign up!</h3>
+                    <h2>Hello,Friend!</h2>
+                    <h3>Enter your personal details and start journey with us !</h3>
                 </div>
                 <div class="img__text m--in">
                     <h3>If you already have an account, just sign in.</h3>
