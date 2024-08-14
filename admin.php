@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/add_products.css">
+    <title>Add Service</title>
+    <style>
+    
+    </style>
 </head>
 <body>
 <div id="add_service" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
-        <div class="alert alert-info">Add Service</div>
+        <div class="alert alert-info">Add products</div>
     </div>
     <div class="modal-body">
         <form class="form-horizontal" method="POST" enctype="multipart/form-data">
@@ -37,9 +41,7 @@
             </div>
         </form>
     </div>
-    <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    </div>
+    
 </div>
 </body>
 </html>
