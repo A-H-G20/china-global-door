@@ -40,7 +40,7 @@
     }
     
     // Fetch products from the database
-    $sql = "SELECT id, image, details FROM products";
+    $sql = "SELECT id, image, details,price FROM products";
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
@@ -49,8 +49,10 @@
         // Output data of each row
         while($row = $result->fetch_assoc()) {
             echo '<div class="product" id="product' . $row["id"] . '">';
-            echo '<img src="' . $row["image"] . '" alt="" />';
-            echo '<h4>' . $row["details"] . '</h4>';
+            echo '<img src="http://localhost/china-global-door/images/' . $row['image'] . '">';
+
+            echo '<h4>' . $row["details"] . ' ' . $row["price"] . '$</h4>';
+
             echo '<button onclick="buyIt()">Buy it </button>  ';
             echo '<button onclick="addToCart()">Add to cart</button>';
             echo '</div>';
