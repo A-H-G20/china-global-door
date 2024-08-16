@@ -43,7 +43,7 @@ if ($conn->connect_error) {
 $product_id = isset($_GET['id']) ? $_GET['id'] : 1; // Default to 1 if no ID is provided
 
 // Fetch product details from the database
-$sql = "SELECT image, details, price FROM products WHERE id = $product_id";
+$sql = "SELECT image, details, price ,description FROM products WHERE id = $product_id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
         </div>
         <div class="description">
             <h2><?php echo $row['details']; ?></h2>
-           <!-- <p><?php //echo $row['description']; ?></p>-->
+           <p><?php echo $row['description']; ?></p>
             <h1><?php echo $row['price']; ?>$</h1>
             <div class="quantity-box">
                 <label for="quantity">Quantity:</label>
