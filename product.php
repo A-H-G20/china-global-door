@@ -69,7 +69,8 @@ if ($result->num_rows > 0) {
                 </span>
             </div>
             <button>Add to Wishlist</button>
-            <button>Add to Cart</button>
+            <button>Add to Cart</button><br>
+            <button>Proceed To Checkout</button>
         </div>
     </div>
     <?php
