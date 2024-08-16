@@ -226,10 +226,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
                 if ($row['role'] == 'user') {
                     header('Location: index.php');
                 } elseif ($row['role'] == 'admin') {
-                    header('Location: admin/home.php');
-                } elseif ($row['role'] == 'realtor') {
-                    header('Location: realtor/home.php');
-                }
+                    header('Location: admin/index.php');
+                } 
                 exit; // Stop further execution
             } else {
                 // Password is incorrect

@@ -49,7 +49,7 @@
         // Output data of each row
         while($row = $result->fetch_assoc()) {
             echo '<div class="product" id="product' . $row["id"] . '">';
-            echo '<img src="http://localhost/china-global-door/images/' . $row['image'] . '">';
+            echo '<img src="http://localhost/china-global-door/image/' . $row['image'] . '">';
 
             echo '<h4>' . $row["details"] . ' ' . $row["price"] . '$</h4>';
 
