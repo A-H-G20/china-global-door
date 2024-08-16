@@ -25,6 +25,12 @@
                     </div>
                 </div>
                 <div class="control-group">
+                    <label class="control-label" for="inputDetails">Description</label>
+                    <div class="controls">
+                        <input type="text" name="description" id="inputDescription" placeholder="Description" required>
+                    </div>
+                </div>
+                <div class="control-group">
                     <label class="control-label" for="inputPrice">Price</label>
                     <div class="controls">
                         <input type="text" name="price" id="inputPrice" placeholder="Price" required>
@@ -66,7 +72,7 @@ if ($conn->connect_error) {
 if (isset($_POST['ad'])) {
     $details = $_POST['details'] ?? ''; // Ensure 'details' is set
     $price = $_POST['price'] ?? '';     // Ensure 'price' is set
-
+    $description=$_POST['description']??'';
     // Ensure 'images/' directory exists
     $targetDirectory = "image/";
     if (!is_dir($targetDirectory)) {
@@ -112,9 +118,9 @@ if (isset($_POST['ad'])) {
     $image_name = basename($_FILES["image"]["name"]);
 
     // Insert data into database
-    $query = "INSERT INTO products (details, price, image) VALUES (?, ?, ?)";
+    $query = "INSERT INTO products (details, price, image,description) VALUES (?, ?, ?,?)";
     $stmt = $conn->prepare($query);
-    $stmt->bind_param("sss", $details, $price, $image_name);
+    $stmt->bind_param("ssss", $details, $price, $image_name,$description);
 
     if ($stmt->execute()) {
 ?>
