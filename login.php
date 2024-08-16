@@ -55,7 +55,7 @@ require "mailerconfig.php";
                     <h3>Enter your personal details and start journey with us !</h3>
                 </div>
                 <div class="img__text m--in">
-                    <h3>If you already have an account, just sign in.</h3>
+                    <h3>If you already have an account, just sign in .</h3>
                 </div>
                 <div class="img__btn">
                     <span class="m--up">Sign Up</span>

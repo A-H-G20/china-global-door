@@ -53,7 +53,7 @@
 
             echo '<h4>' . $row["details"] . ' ' . $row["price"] . '$</h4>';
 
-            echo '<button onclick="buyIt()">Buy it </button>  ';
+            echo '<button onclick="wishList()"> Add to wishlist❤ </button>  ';
             echo '<button onclick="addToCart()">Add to cart</button>';
             echo '</div>';
         }

@@ -38,6 +38,38 @@ body {
   align-items: center;
 }
 
+.search-container {
+  display: flex;
+  margin-left: 40px;
+}
+.search-container img {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  filter: invert(100);
+}
+.search-container img:hover {
+  background-color: initial;
+  box-shadow: initial;
+  transform: initial;
+  color: initial;
+  border-radius: initial;
+  padding: initial;
+}
+.search-container input[type="text"] {
+  width: 100px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-right: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.search-container span {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
 .shopping img {
   width: 30px;
   height: 30px;
@@ -84,38 +116,6 @@ body {
 .product button:hover {
   background-color: rgb(120, 46, 17);
   border-radius: 15px;
-}
-
-.search-container {
-  display: flex;
-  margin-left: 40px;
-}
-.search-container img {
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
-  margin-right: 10px;
-  filter: invert(100);
-}
-.search-container img:hover {
-  background-color: initial;
-  box-shadow: initial;
-  transform: initial;
-  color: initial;
-  border-radius: initial;
-  padding: initial;
-}
-.search-container input[type="text"] {
-  width: 100px;
-  padding-left: 30px;
-  padding-right: 20px;
-  margin-right: 15px;
-  background-color: rgb(255, 255, 255);
-}
-
-.search-container span {
-  font-size: 20px;
-  color: rgb(255, 255, 255);
 }
 
 img:hover {
